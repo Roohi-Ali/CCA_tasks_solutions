@@ -1,0 +1,71 @@
+TASK_7
+
+How would you secure an API to prevent unauthorised access? List some common techniques?
+
+Few Ways to secure an API to prevent unauthorised access are as follows;
+1 - Using Authentication.
+I have used Passport.js for authenticating users by using username and password.
+Other ways of Authentication are using JSON Web Tokens - JWT for token-based authentication or by using OAuth.
+2 - Using Authorization
+Providing access based on user roles. Define user roles and restrict access based on those roles to limit what resouces a user can access.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TASK_9
+
+Explain the time complexity of sorting algorithms like Quick Sort and Merge Sort
+
+Time-Complexity of QuickSort:
+Best Case- O (n log n)
+Average Case - O (n log n)
+Worst Case (when the array is already sorted) - o(n^2)
+
+Time-Complexity of MergeSort:
+Best Case- O (n log n)
+Average Case - O (n log n)
+Worst Case - O (n log n)
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TASK_11
+
+Explain the difference between stacks and queues, and give examples of their use cases.
+
+stacks
+A stack is a collection of elements that follows the Last In, First Out (LIFO) principle. This means that the last element added to the stack is the first one to be removed.
+
+UseCase : Evaluating expressions (e.g., in calculators).
+
+Queues 
+
+A queue is a collection of elements that follows the First In, First Out (FIFO) principle. This means that the first element added to the queue is the first one to be removed.
+
+UseCase: Task Scheduling - Queues are used in scheduling tasks in operating systems, where processes are managed in the order they arrive.
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+TASK_12
+
+12. What is exception handling? Give an example in your preferred language.
+
+Exception Handling is a programming mechanism that allows developers to manage errors or exceptional conditions that occur during the execution of a program. It enables the program to continue running or to gracefully handle the error instead of crashing. 
+
+function divide(a, b) {
+    try {
+        if (b === 0) {
+            throw new Error("Cannot divide by zero");
+        }
+        return a / b;
+    } catch (error) {
+        console.error("Error:", error.message);
+        return null; 
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+TASK_14
+Describe the types of errors you have encountered when developing backend code and how you fixed them.
+
+When developing backend code, I’ve encountered several types of errors, including:
+
+Syntax Errors: These occur due to typos or incorrect syntax. For example, missing a semicolon or using an undefined variable. I fixed these by carefully reviewing the code and using linters or IDE features to highlight syntax issues.
+
+Runtime Errors: These happen while the program is running, often due to null references or type mismatches. I debugged these by adding error-handling mechanisms, such as try-catch blocks, to catch exceptions.
